@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
+import './SignUp.css'
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 function SignUp() {
   const history = useNavigate();
@@ -90,11 +92,16 @@ function SignUp() {
   };
 
   return (
-    <div>
-      <h1>Signup</h1>
+    <div className='signup-container'>
       <form onSubmit={handleSubmit}>
+           <h1 className="title">QUIZZIE</h1>
+              <div className="both">
+                
+                <h3 className="imp" >Sign Up</h3>
+                 <h3 className="imp"><Link className='check' to='/'>Log In</Link></h3>
+              </div>
         <div>
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name">Name</label>
           <input
             type="text"
             id="name"
@@ -102,6 +109,7 @@ function SignUp() {
             value={formData.name}
             onChange={handleChange}
             placeholder={errors.name}
+            className="inpbox"
           />
         </div>
         <div>
@@ -113,6 +121,7 @@ function SignUp() {
             value={formData.email}
             onChange={handleChange}
             placeholder={errors.email}
+            className="inpbox"
           />
         </div>
         <div>
@@ -124,6 +133,7 @@ function SignUp() {
             value={formData.password}
             onChange={handleChange}
             placeholder={errors.password}
+            className="inpbox"
           />
         </div>
         <div>
@@ -135,6 +145,7 @@ function SignUp() {
             value={formData.confirmPassword}
             onChange={handleChange}
             placeholder={errors.confirmPassword}
+            className="inpbox"
           />
         </div>
         <button type="submit">Sign Up</button>

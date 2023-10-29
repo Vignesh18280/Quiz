@@ -1,0 +1,80 @@
+.whole{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  max-width: 800px;
+  height: 450px;
+  width: 100%;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.texts{
+  font-weight: bold;
+}
+
+.textsem{
+  font-weight: bold;
+   padding-left: 25px;
+}
+
+.dis{
+  display:contents;
+}
+
+.inpbox{
+  height: 27px;
+  width : 250px;
+  margin: 15px;
+  border-radius: 3px;
+  margin-left: 10px;
+  border :rgba(0.5, 0.5, 0.5, 0.5);
+  background-color: #f0f0f0
+}
+
+.login{
+  width : 200px;
+  height : 35px;
+  margin-left: 90px;
+  margin-top: 10px;
+}
+
+.title{
+  font-weight: bolder;
+  font-size:40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #616161;
+  margin-left: 120px;
+}
+.both{
+  /* width: 30px; */
+  display:flex;
+}
+.imp{
+  display : flex;
+  align-items: center;
+  justify-content : center;
+  font-weight:bold;
+  margin: 10px 50px 50px 50px;
+  width: 100px;
+  height: 35px;
+  padding: 4px 5px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+  text-decoration:none;
+
+} 
+
+.check{
+  text-decoration:none;
+  color: black;
+}

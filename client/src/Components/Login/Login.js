@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import Signup from '../SignUp/SignUp'
+import './Login.css'
 
 function Login() {
   const [formData, setFormData] = useState({
@@ -84,11 +87,20 @@ function Login() {
   };
 
   return (
-    <div>
-      <h1>Login</h1>
+    <div className="whole" >
+      <div className="box">
+      {/* <div className="dis">
+        <h1>Login</h1>
+      </div> */}
       <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="email">Email:</label>
+              <h1 className="title">QUIZZIE</h1>
+              <div className="both">
+                
+                <h3 className="imp" ><Link className="check" to='/Signup'>Sign Up</Link></h3>
+                 <h3 className="imp">Log In</h3>
+              </div>
+        <div className="email">
+          <label htmlFor="email" className="textsem">Email </label>
           <input
             type="email"
             id="email"
@@ -96,10 +108,11 @@ function Login() {
             value={formData.email}
             onChange={handleChange}
             placeholder={error.email}
+            className="inpbox"
           />
         </div>
-        <div>
-          <label htmlFor="password">Password:</label>
+        <div className="password">
+          <label htmlFor="password" className="texts">Password</label>
           <input
             type="password"
             id="password"
@@ -107,15 +120,17 @@ function Login() {
             value={formData.password}
             onChange={handleChange}
             placeholder={error.password}
+            className="inpbox"
           />
         </div>
-        <button type="submit">Login</button>
+        <button type="submit" className="login">Login</button>
       </form>
       <ToastContainer
         position="bottom-center"
         autoClose={2000}
         hideProgressBar={false}
       />
+   </div>
     </div>
   );
 }
