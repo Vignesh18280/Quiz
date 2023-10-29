@@ -170,7 +170,7 @@ function SignUp() {
               width : "300px",
               margin: "15px",
               borderRadius: "3px",
-              marginLeft: "40px",
+              marginLeft: "10px",
                border :"rgba(0.5, 0.5, 0.5, 0.5)",
                backgroundColor:" #f0f0f0"
             }}
